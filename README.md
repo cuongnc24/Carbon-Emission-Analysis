@@ -123,4 +123,7 @@ ORDER BY sum_pcf DESC LIMIT 10;
 | 5                 | "Pharmaceuticals, Biotechnology & Life Sciences" | 72486   | 
 | 9                 | Chemicals                                        | 62369   | 
 | 24                | Software & Services                              | 46544   | 
-| 20                | Media                                            | 23017   |         
+| 20                | Media                                            | 23017   |      
+
+### Problem 3: What are the companies with the highest contribution to carbon emissions?
+
