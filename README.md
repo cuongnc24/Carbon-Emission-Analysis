@@ -4,9 +4,9 @@
 This report aims to analyze carbon emissions to examine the carbon footprint across various industries, and to identify sectors with the highest levels of emissions by analyzing them across countries and years, as well as to uncover trends.
 
 ## Overview of 4 tables
-## Header
+## Table 'product_emissions'
 
-Describe what did you do...
+SQL Code
 ```
 select * from product_emissions limit 3;
 
