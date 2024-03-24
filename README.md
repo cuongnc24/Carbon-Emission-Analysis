@@ -126,4 +126,27 @@ ORDER BY sum_pcf DESC LIMIT 10;
 | 20                | Media                                            | 23017   |      
 
 ### Problem 3: What are the companies with the highest contribution to carbon emissions?
+Result
 
+SQL code
+```
+SELECT product_emissions.company_id, companies.company_name, SUM(carbon_footprint_pcf) AS sum_pcf
+FROM product_emissions
+	JOIN companies
+	ON product_emissions.company_id = companies.id
+GROUP BY product_emissions.company_id
+ORDER BY sum_pcf DESC LIMIT 10;
+```
+
+| company_id | company_name                            | sum_pcf | 
+| ---------: | --------------------------------------: | ------: | 
+| 10         | "Gamesa Corporación Tecnológica, S.A."  | 9778464 | 
+| 61         | Daimler AG                              | 1594300 | 
+| 139        | Volkswagen AG                           | 655960  | 
+| 17         | "Mitsubishi Gas Chemical Company, Inc." | 212016  | 
+| 11         | "Hino Motors, Ltd."                     | 191687  | 
+| 34         | Arcelor Mittal                          | 167007  | 
+| 141        | Weg S/A                                 | 160655  | 
+| 71         | General Motors Company                  | 137007  | 
+| 16         | "Lexmark International, Inc."           | 132012  | 
+| 7          | "Daikin Industries, Ltd."               | 105600  |         
