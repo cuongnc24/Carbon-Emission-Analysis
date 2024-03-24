@@ -150,3 +150,6 @@ ORDER BY sum_pcf DESC LIMIT 10;
 | 71         | General Motors Company                  | 137007  | 
 | 16         | "Lexmark International, Inc."           | 132012  | 
 | 7          | "Daikin Industries, Ltd."               | 105600  |         
+
+
+### Problem 5: What are the countries with the highest contribution to carbon emissions?
