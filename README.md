@@ -79,3 +79,24 @@ LIMIT 5;
 | 12134-8-2017 | TCDE                         | 198150    |         
 
 ### Problem 2: What are the industry groups of these products?
+#### 4/5 product contribute the most to carbon emissions are from Electrical Equipment and Machinery
+
+SQL Code
+```
+select product_emissions.industry_group_id, product_emissions.product_name, industry_groups.industry_group
+from product_emissions
+join industry_groups
+	on  product_emissions.industry_group_id=  industry_groups.id 
+	where product_emissions.id in ("22917-4-2015", "22917-5-2015","22917-3-2015","22917-2-2015", "12134-8-2017");
+```
+
+| industry_group_id | product_name                 | industry_group                     | 
+| ----------------: | ---------------------------: | ---------------------------------: | 
+| 13                | Wind Turbine G90 2 Megawats  | Electrical Equipment and Machinery | 
+| 13                | Wind Turbine G114 2 Megawats | Electrical Equipment and Machinery | 
+| 13                | Wind Turbine G128 5 Megawats | Electrical Equipment and Machinery | 
+| 13                | Wind Turbine G132 5 Megawats | Electrical Equipment and Machinery | 
+| 19                | TCDE                         | Materials                          | 
+| 19                | TCDE                         | Materials                          |            
+
+### Problem 3: What are the industries with the highest contribution to carbon emissions?
