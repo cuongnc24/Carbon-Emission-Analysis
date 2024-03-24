@@ -55,3 +55,7 @@ select * from countries limit 3;
 | 1  | Australia    | 
 | 2  | Belgium      | 
 | 3  | Brazil       |         
+
+## RESEARCH
+
+### Problem 1: Which products contribute the most to carbon emissions?
