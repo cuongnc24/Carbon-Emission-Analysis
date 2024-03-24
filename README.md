@@ -100,3 +100,27 @@ join industry_groups
 | 19                | TCDE                         | Materials                          |            
 
 ### Problem 3: What are the industries with the highest contribution to carbon emissions?
+## Result
+
+SQL Code
+```
+SELECT product_emissions.industry_group_id, industry_groups.industry_group, SUM(carbon_footprint_pcf) AS sum_pcf
+FROM product_emissions
+	JOIN industry_groups 
+	ON product_emissions.industry_group_id = industry_groups.id
+GROUP BY product_emissions.industry_group_id
+ORDER BY sum_pcf DESC LIMIT 10;
+```
+
+| industry_group_id | industry_group                                   | sum_pcf | 
+| ----------------: | -----------------------------------------------: | ------: | 
+| 13                | Electrical Equipment and Machinery               | 9801558 | 
+| 7                 | Automobiles & Components                         | 2582264 | 
+| 19                | Materials                                        | 577595  | 
+| 25                | Technology Hardware & Equipment                  | 363776  | 
+| 8                 | Capital Goods                                    | 258712  | 
+| 2                 | "Food, Beverage & Tobacco"                       | 111131  | 
+| 5                 | "Pharmaceuticals, Biotechnology & Life Sciences" | 72486   | 
+| 9                 | Chemicals                                        | 62369   | 
+| 24                | Software & Services                              | 46544   | 
+| 20                | Media                                            | 23017   |         
