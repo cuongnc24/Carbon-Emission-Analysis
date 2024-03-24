@@ -4,13 +4,11 @@
 This report aims to analyze carbon emissions to examine the carbon footprint across various industries, and to identify sectors with the highest levels of emissions by analyzing them across countries and years, as well as to uncover trends.
 
 ## Overview of 4 tables
-## Table 'product_emissions'
+# Table 1 : 'product_emissions'
 
 SQL Code
 ```
 select * from product_emissions limit 3;
-
-
 ```
 
 | id           | company_id | country_id | industry_group_id | year | product_name                                                    | weight_kg | carbon_footprint_pcf | upstream_percent_total_pcf | operations_percent_total_pcf | downstream_percent_total_pcf | 
