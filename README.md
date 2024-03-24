@@ -176,3 +176,5 @@ ORDER BY sum_pcf DESC LIMIT 10;
 | 20         | Netherlands  | 70417   | 
 | 26         | Taiwan       | 62875   | 
 | 12         | India        | 24574   |         
+
+### Problem 6: What is the trend of carbon footprints (PCFs) over the years?
