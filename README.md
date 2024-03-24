@@ -77,3 +77,5 @@ LIMIT 5;
 | 22917-3-2015 | Wind Turbine G114 2 Megawats | 1532608   | 
 | 22917-2-2015 | Wind Turbine G90 2 Megawats  | 1251625   | 
 | 12134-8-2017 | TCDE                         | 198150    |         
+
+### Problem 2: What are the industry groups of these products?
