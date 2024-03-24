@@ -153,3 +153,26 @@ ORDER BY sum_pcf DESC LIMIT 10;
 
 
 ### Problem 5: What are the countries with the highest contribution to carbon emissions?
+## result
+
+SQL Code
+```
+SELECT product_emissions.country_id, countries.country_name, SUM(carbon_footprint_pcf) AS sum_pcf
+FROM product_emissions
+	JOIN countries
+	ON product_emissions.country_id = countries.id
+GROUP BY product_emissions.country_id
+ORDER BY sum_pcf DESC LIMIT 10;
+```
+| country_id | country_name | sum_pcf | 
+| ---------: | -----------: | ------: | 
+| 23         | Spain        | 9786130 | 
+| 10         | Germany      | 2251225 | 
+| 16         | Japan        | 653237  | 
+| 28         | USA          | 518381  | 
+| 22         | South Korea  | 186965  | 
+| 3          | Brazil       | 169337  | 
+| 18         | Luxembourg   | 167007  | 
+| 20         | Netherlands  | 70417   | 
+| 26         | Taiwan       | 62875   | 
+| 12         | India        | 24574   |         
