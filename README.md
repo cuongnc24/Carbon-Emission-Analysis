@@ -178,3 +178,24 @@ ORDER BY sum_pcf DESC LIMIT 10;
 | 12         | India        | 24574   |         
 
 ### Problem 6: What is the trend of carbon footprints (PCFs) over the years?
+
+#### result
+
+SQL Code
+```
+select year, 
+	ROUND(avg(upstream_percent_total_pcf),2) as avg_upstream,
+	ROUND(avg(operations_percent_total_pcf),2) as avg_operations,
+	ROUND(avg(downstream_percent_total_pcf),2) as avg_downstream
+from product_emissions
+group by year
+order by year ASC;
+```
+
+| year | avg_upstream | avg_operations | avg_downstream | 
+| ---: | -----------: | -------------: | -------------: | 
+| 2013 | 29.53        | 13.47          | 20.81          | 
+| 2014 | 20.27        | 7.86           | 10.86          | 
+| 2015 | 22.49        | 10.94          | 16.77          | 
+| 2016 | 15.74        | 7.92           | 9.54           | 
+| 2017 | 16.96        | 12.26          | 20.77          |         
