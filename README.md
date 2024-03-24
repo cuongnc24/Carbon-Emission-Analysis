@@ -199,3 +199,6 @@ order by year ASC;
 | 2015 | 22.49        | 10.94          | 16.77          | 
 | 2016 | 15.74        | 7.92           | 9.54           | 
 | 2017 | 16.96        | 12.26          | 20.77          |         
+
+### Problem 7: Which industry groups has demonstrated the most notable decrease in carbon footprints (PCFs) over time?
+
